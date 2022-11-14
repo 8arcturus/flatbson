@@ -1,6 +1,6 @@
 # FlatBSON
 
-[![Build status](https://github.com/chidiwilliams/flatbson/workflows/Build/badge.svg)](https://github.com/chidiwilliams/flatbson/actions?query=workflow%3ABuild) [![API reference](https://img.shields.io/badge/godoc-reference-5272B4)](https://pkg.go.dev/github.com/chidiwilliams/flatbson?tab=doc) [![codecov](https://codecov.io/gh/chidiwilliams/flatbson/branch/master/graph/badge.svg)](https://codecov.io/gh/chidiwilliams/flatbson)
+[![Build status](https://github.com/8arcturus/flatbson/workflows/Build/badge.svg)](https://github.com/8arcturus/flatbson/actions?query=workflow%3ABuild) [![API reference](https://img.shields.io/badge/godoc-reference-5272B4)](https://pkg.go.dev/github.com/8arcturus/flatbson?tab=doc) [![codecov](https://codecov.io/gh/8arcturus/flatbson/branch/master/graph/badge.svg)](https://codecov.io/gh/8arcturus/flatbson)
 
 FlatBSON recursively flattens a Go struct using its BSON tags.
 
@@ -29,8 +29,9 @@ flatbson.Flatten(User{Address: {VisitedAt: time.Now().UTC()}})
 ```
 
 Passing the result to `coll.UpdateOne` updates only the `address.VisitedAt` field instead of overwriting the entire `address` embedded document. See this [blog post](https://dev.to/chidiwilliams/partially-updating-an-embedded-mongo-document-in-go-knn) for more information.
+(Thanks to @chidiwilliams)
 
-The complete documentation is available on [Godoc](https://pkg.go.dev/github.com/chidiwilliams/flatbson).
+The complete documentation is available on [Godoc](https://pkg.go.dev/github.com/8arcturus/flatbson).
 
 ## How to Install
 
